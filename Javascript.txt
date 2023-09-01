@@ -1,0 +1,13 @@
+function addNumbers(a, b) {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    console.error('Both inputs must be numbers.');
+    throw new Error('Invalid input');
+  }
+  return a + b;
+}
+try {
+  const result = addNumbers(0, 10);
+  console.log('Result:', result);
+} catch (error) {
+  console.error('Error:', error.message);
+}
